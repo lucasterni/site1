@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Archivio</title>
+	<link rel="stylesheet" href="projects.css">
+</head>
+<body class="projects-page">
+	<canvas id="shader-canvas"></canvas>
+	<header class="top-header">
+		<div class="title-group">
+			<img src="Images/LOGO.png" alt="Logo" class="header-logo">
+			<h3 class="title">TICKETS OF THE WORLD</h3>
+		</div>
+		<nav class="navbar">
+			<a href="index.html" class="nav-link">home</a>
+			<a href="about.html" class="nav-link">about</a>
+		</nav>
+	</header>
+	<main class="projects-container">
+		<aside class="projects-left">
+			<ul class="project-titles">
+				<!-- 12 titles -->
+				<li class="project-title-item active" data-project="1">1930-1939</li>
+				<li class="project-title-item" data-project="2">1940-1949</li>
+				<li class="project-title-item" data-project="3">1950-1959</li>
+				<li class="project-title-item" data-project="4">1960-1969</li>
+				<li class="project-title-item" data-project="5">1970-1979</li>
+				<li class="project-title-item" data-project="6">1980-1989</li>
+				<li class="project-title-item" data-project="7">1990-1999</li>
+				<li class="project-title-item" data-project="8">2000-2009</li>
+				<li class="project-title-item" data-project="9">2010-2019</li>
+				<li class="project-title-item" data-project="10">2020-2029</li>
+			</ul>
+		</aside>
+
+		<section class="projects-middle">
+			<!-- 12 descriptive blocks; only one visible at a time -->
+			<div class="project-desc-item active" data-project="1">
+				<h2>1930-1939</h2>
+				<p>Descrizione del progetto 1. Qui vanno i dettagli, il processo, e i risultati principali.</p>
+			</div>
+			<div class="project-desc-item" data-project="2">
+				<h2>Project 2</h2>
+				<p>Descrizione del progetto 2.</p>
+			</div>
+			<div class="project-desc-item" data-project="3">
+				<h2>Project 3</h2>
+				<p>Descrizione del progetto 3.</p>
+			</div>
+			<div class="project-desc-item" data-project="4">
+				<h2>Project 4</h2>
+				<p>Descrizione del progetto 4.</p>
+			</div>
+			<div class="project-desc-item" data-project="5">
+				<h2>Project 5</h2>
+				<p>Descrizione del progetto 5.</p>
+			</div>
+			<div class="project-desc-item" data-project="6">
+				<h2>Project 6</h2>
+				<p>Descrizione del progetto 6.</p>
+			</div>
+			<div class="project-desc-item" data-project="7">
+				<h2>Project 7</h2>
+				<p>Descrizione del progetto 7.</p>
+			</div>
+			<div class="project-desc-item" data-project="8">
+				<h2>Project 8</h2>
+				<p>Descrizione del progetto 8.</p>
+			</div>
+			<div class="project-desc-item" data-project="9">
+				<h2>Project 9</h2>
+				<p>Descrizione del progetto 9.</p>
+			</div>
+			<div class="project-desc-item" data-project="10">
+				<h2>Project 10</h2>
+				<p>Descrizione del progetto 10.</p>
+			</div>
+			<div class="project-desc-item" data-project="11">
+				<h2>Project 11</h2>
+				<p>Descrizione del progetto 11.</p>
+			</div>
+			<div class="project-desc-item" data-project="12">
+				<h2>Project 12</h2>
+				<p>Descrizione del progetto 12.</p>
+			</div>
+		</section>
+
+		<aside class="projects-right">
+			<!-- For simplicity each project has its own 2x6 gallery; the JS will toggle .active -->
+			<!-- Replace image src with your actual images inside Images/ -->
+      
+			<!-- Repeat for 12 projects -->
+			<div class="project-images active" data-project="1">
+				<div class="images-grid">
+					<img src="Images/1.jpg" alt="photo1">
+					<img src="Images/2.jpg" alt="photo2">
+					<img src="Images/3.jpg" alt="photo3">
+					<img src="Images/4.jpg" alt="photo4">
+					<img src="Images/5.jpg" alt="photo5">
+					<img src="Images/6.jpg" alt="photo6">
+					<img src="Images/7.jpg" alt="photo7">
+					<img src="Images/8.jpg" alt="photo8">
+				</div>
+			</div>
+
+			<!-- create empty galleries for other projects which will be shown when active -->
+			<div class="project-images" data-project="2">
+				<div class="images-grid">
+					<img src="Images/photo1.jpg" alt="photo1">
+					<img src="Images/photo2.jpg" alt="photo2">
+					<img src="Images/photo3.jpg" alt="photo3">
+					<img src="Images/photo4.jpg" alt="photo4">
+					<img src="Images/photo5.jpg" alt="photo5">
+					<img src="Images/photo6.jpg" alt="photo6">
+					<img src="Images/photo7.jpg" alt="photo7">
+					<img src="Images/photo8.jpg" alt="photo8">
+					<img src="Images/photo9.jpg" alt="photo9">
+					<img src="Images/photo10.jpg" alt="photo10">
+					<img src="Images/photo11.jpg" alt="photo11">
+					<img src="Images/photo12.jpg" alt="photo12">
+				</div>
+			</div>
+
+			<!-- Duplicate for projects 3..12 -->
+			<div class="project-images" data-project="3">
+				<div class="images-grid">
+					<img src="Images/photo1.jpg" alt="photo1">
+					<img src="Images/photo2.jpg" alt="photo2">
+					<img src="Images/photo3.jpg" alt="photo3">
+					<img src="Images/photo4.jpg" alt="photo4">
+					<img src="Images/photo5.jpg" alt="photo5">
+					<img src="Images/photo6.jpg" alt="photo6">
+					<img src="Images/photo7.jpg" alt="photo7">
+					<img src="Images/photo8.jpg" alt="photo8">
+					<img src="Images/photo9.jpg" alt="photo9">
+					<img src="Images/photo10.jpg" alt="photo10">
+					<img src="Images/photo11.jpg" alt="photo11">
+					<img src="Images/photo12.jpg" alt="photo12">
+				</div>
+			</div>
+
+			<div class="project-images" data-project="4">
+				<div class="images-grid">
+					<img src="Images/photo1.jpg" alt="photo1">
+					<img src="Images/photo2.jpg" alt="photo2">
+					<img src="Images/photo3.jpg" alt="photo3">
+					<img src="Images/photo4.jpg" alt="photo4">
+					<img src="Images/photo5.jpg" alt="photo5">
+					<img src="Images/photo6.jpg" alt="photo6">
+					<img src="Images/photo7.jpg" alt="photo7">
+					<img src="Images/photo8.jpg" alt="photo8">
+					<img src="Images/photo9.jpg" alt="photo9">
+					<img src="Images/photo10.jpg" alt="photo10">
+					<img src="Images/photo11.jpg" alt="photo11">
+					<img src="Images/photo12.jpg" alt="photo12">
+				</div>
+			</div>
+
+			<div class="project-images" data-project="5">
+				<div class="images-grid">
+					<img src="Images/photo1.jpg" alt="photo1">
+					<img src="Images/photo2.jpg" alt="photo2">
+					<img src="Images/photo3.jpg" alt="photo3">
+					<img src="Images/photo4.jpg" alt="photo4">
+					<img src="Images/photo5.jpg" alt="photo5">
+					<img src="Images/photo6.jpg" alt="photo6">
+					<img src="Images/photo7.jpg" alt="photo7">
+					<img src="Images/photo8.jpg" alt="photo8">
+					<img src="Images/photo9.jpg" alt="photo9">
+					<img src="Images/photo10.jpg" alt="photo10">
+					<img src="Images/photo11.jpg" alt="photo11">
+					<img src="Images/photo12.jpg" alt="photo12">
+				</div>
+			</div>
+
+			<div class="project-images" data-project="6">
+				<div class="images-grid">
+					<img src="Images/photo1.jpg" alt="photo1">
+					<img src="Images/photo2.jpg" alt="photo2">
+					<img src="Images/photo3.jpg" alt="photo3">
+					<img src="Images/photo4.jpg" alt="photo4">
+					<img src="Images/photo5.jpg" alt="photo5">
+					<img src="Images/photo6.jpg" alt="photo6">
+					<img src="Images/photo7.jpg" alt="photo7">
+					<img src="Images/photo8.jpg" alt="photo8">
+					<img src="Images/photo9.jpg" alt="photo9">
+					<img src="Images/photo10.jpg" alt="photo10">
+					<img src="Images/photo11.jpg" alt="photo11">
+					<img src="Images/photo12.jpg" alt="photo12">
+				</div>
+			</div>
+
+			<div class="project-images" data-project="7">
+				<div class="images-grid">
+					<img src="Images/photo1.jpg" alt="photo1">
+					<img src="Images/photo2.jpg" alt="photo2">
+					<img src="Images/photo3.jpg" alt="photo3">
+					<img src="Images/photo4.jpg" alt="photo4">
+					<img src="Images/photo5.jpg" alt="photo5">
+					<img src="Images/photo6.jpg" alt="photo6">
+					<img src="Images/photo7.jpg" alt="photo7">
+					<img src="Images/photo8.jpg" alt="photo8">
+					<img src="Images/photo9.jpg" alt="photo9">
+					<img src="Images/photo10.jpg" alt="photo10">
+					<img src="Images/photo11.jpg" alt="photo11">
+					<img src="Images/photo12.jpg" alt="photo12">
+				</div>
+			</div>
+
+			<div class="project-images" data-project="8">
+				<div class="images-grid">
+					<img src="Images/photo1.jpg" alt="photo1">
+					<img src="Images/photo2.jpg" alt="photo2">
+					<img src="Images/photo3.jpg" alt="photo3">
+					<img src="Images/photo4.jpg" alt="photo4">
+					<img src="Images/photo5.jpg" alt="photo5">
+					<img src="Images/photo6.jpg" alt="photo6">
+					<img src="Images/photo7.jpg" alt="photo7">
+					<img src="Images/photo8.jpg" alt="photo8">
+					<img src="Images/photo9.jpg" alt="photo9">
+					<img src="Images/photo10.jpg" alt="photo10">
+					<img src="Images/photo11.jpg" alt="photo11">
+					<img src="Images/photo12.jpg" alt="photo12">
+				</div>
+			</div>
+
+			<div class="project-images" data-project="9">
+				<div class="images-grid">
+					<img src="Images/photo1.jpg" alt="photo1">
+					<img src="Images/photo2.jpg" alt="photo2">
+					<img src="Images/photo3.jpg" alt="photo3">
+					<img src="Images/photo4.jpg" alt="photo4">
+					<img src="Images/photo5.jpg" alt="photo5">
+					<img src="Images/photo6.jpg" alt="photo6">
+					<img src="Images/photo7.jpg" alt="photo7">
+					<img src="Images/photo8.jpg" alt="photo8">
+					<img src="Images/photo9.jpg" alt="photo9">
+					<img src="Images/photo10.jpg" alt="photo10">
+					<img src="Images/photo11.jpg" alt="photo11">
+					<img src="Images/photo12.jpg" alt="photo12">
+				</div>
+			</div>
+
+			<div class="project-images" data-project="10">
+				<div class="images-grid">
+					<img src="Images/photo1.jpg" alt="photo1">
+					<img src="Images/photo2.jpg" alt="photo2">
+					<img src="Images/photo3.jpg" alt="photo3">
+					<img src="Images/photo4.jpg" alt="photo4">
+					<img src="Images/photo5.jpg" alt="photo5">
+					<img src="Images/photo6.jpg" alt="photo6">
+					<img src="Images/photo7.jpg" alt="photo7">
+					<img src="Images/photo8.jpg" alt="photo8">
+					<img src="Images/photo9.jpg" alt="photo9">
+					<img src="Images/photo10.jpg" alt="photo10">
+					<img src="Images/photo11.jpg" alt="photo11">
+					<img src="Images/photo12.jpg" alt="photo12">
+				</div>
+			</div>
+
+			<div class="project-images" data-project="11">
+				<div class="images-grid">
+					<img src="Images/photo1.jpg" alt="photo1">
+					<img src="Images/photo2.jpg" alt="photo2">
+					<img src="Images/photo3.jpg" alt="photo3">
+					<img src="Images/photo4.jpg" alt="photo4">
+					<img src="Images/photo5.jpg" alt="photo5">
+					<img src="Images/photo6.jpg" alt="photo6">
+					<img src="Images/photo7.jpg" alt="photo7">
+					<img src="Images/photo8.jpg" alt="photo8">
+					<img src="Images/photo9.jpg" alt="photo9">
+					<img src="Images/photo10.jpg" alt="photo10">
+					<img src="Images/photo11.jpg" alt="photo11">
+					<img src="Images/photo12.jpg" alt="photo12">
+				</div>
+			</div>
+
+			<div class="project-images" data-project="12">
+				<div class="images-grid">
+					<img src="Images/photo1.jpg" alt="photo1">
+					<img src="Images/photo2.jpg" alt="photo2">
+					<img src="Images/photo3.jpg" alt="photo3">
+					<img src="Images/photo4.jpg" alt="photo4">
+					<img src="Images/photo5.jpg" alt="photo5">
+					<img src="Images/photo6.jpg" alt="photo6">
+					<img src="Images/photo7.jpg" alt="photo7">
+					<img src="Images/photo8.jpg" alt="photo8">
+					<img src="Images/photo9.jpg" alt="photo9">
+					<img src="Images/photo10.jpg" alt="photo10">
+					<img src="Images/photo11.jpg" alt="photo11">
+					<img src="Images/photo12.jpg" alt="photo12">
+				</div>
+			</div>
+
+		</aside>
+	</main>
+
+	<footer class="footer bottom-header">
+		<div class="footer-item">
+			<span class="footer-label">email</span>
+			<a href="mailto:luca@example.com" class="footer-link">ticketsotw@gmail.com</a>
+		</div>
+		<div class="footer-item footer-instagram">
+			<span class="footer-label">Instagram</span>
+			<a href="https://www.instagram.com/ticketsplz/" target="_blank" class="footer-link">@ticketsplz</a>
+		</div>
+		<div class="footer-item footer-phone">
+			<span class="footer-label">phone</span>
+			<a href="tel:+39123456789" class="footer-link">+39 123 456 789</a>
+		</div>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+	<script src="shader-pages.js"></script>
+	<script src="projects.js"></script>
+</body>
+</html>
