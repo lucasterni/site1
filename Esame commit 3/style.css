@@ -1,0 +1,249 @@
+style.css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #D32F2F;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  position: relative;
+}
+
+#shader-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#planisfero-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+  background-image: url("Images/Planisfero.png");
+  background-size: auto calc(120vh - 0px);
+  background-position: center calc(50% + 14px);
+  background-repeat: no-repeat;
+}
+
+body.home-page {
+  opacity: 0;
+  animation: homeFadeIn 0.6s ease forwards;
+}
+
+@keyframes homeFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 200;
+  box-sizing: border-box;
+  background-color: #000;
+  border-bottom: 1px solid rgba(255,248,231,0.2);
+}
+
+.bottom-header {
+  background-color: #000;
+  border-top: 1px solid rgba(255,248,231,0.2);
+}
+
+.title {
+  position: static;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: 1px;
+  color: #FFF8E7;
+}
+
+.title-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-logo {
+  width: 44px;
+  height: auto;
+  display: block;
+}
+
+.navbar {
+  position: static;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #FFF8E7;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: opacity 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+
+
+
+.flair {
+  position: fixed;
+  opacity: 0;
+  width: 280px;
+  height: auto;
+  pointer-events: none;
+  z-index: 50;
+  transform-origin: center;
+}
+
+.content {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  text-align: center;
+  pointer-events: none;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.footer-message {
+  color: #FFF8E7;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.footer-contacts {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-instagram {
+  position: static;
+  transform: none;
+}
+
+.footer-phone {
+  margin-left: 0;
+}
+
+.footer-label {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
+  color: #FFF8E7;
+}
+
+.footer-link {
+  color: #FFF8E7;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: opacity 0.3s ease;
+}
+
+.footer-link:hover {
+  opacity: 0.7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.scrolling-text {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  z-index: 50;
+  padding: 0;
+}
+
+.scrolling-stack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.scrolling-text .rail {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+.scrolling-text .rail h4 {
+  white-space: nowrap;
+  font-size: 60px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 1.12;
+  margin: 0 30px 0 0;
+  color: #000;
+}
