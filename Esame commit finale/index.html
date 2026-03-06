@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flair Animation</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home-page">
+    <canvas id="shader-canvas"></canvas>
+    <div id="planisfero-layer"></div>
+    <header class="top-header">
+        <div class="title-group">
+            <img src="Images/LOGO.png" alt="Logo" class="header-logo">
+            <h3 class="title">TICKETS OF THE WORLD</h3>
+        </div>
+
+        <nav class="navbar">
+            <a href="projects.html" class="nav-link">archivio</a>
+            <a href="mappa.html" class="nav-link">mappa</a>
+            <a href="about.html" class="nav-link">about</a>
+        </nav>
+    </header>
+    
+
+    <div class="content">
+        <img class="flair" src="Images/1.png" alt="">
+        <img class="flair" src="Images/14.png" alt="">
+        <img class="flair" src="Images/20.png" alt="">
+        <img class="flair" src="Images/26.png" alt="">
+        <img class="flair" src="Images/39.png" alt="">
+        <img class="flair" src="Images/47.png" alt="">
+        <img class="flair" src="Images/55.png" alt="">
+        <img class="flair" src="Images/62.png" alt="">
+        <img class="flair" src="Images/68.png" alt="">
+    </div>
+    
+    
+   
+    
+    <footer class="footer bottom-header">
+        <div class="footer-message">Mandaci anche tu i tuoi biglietti!</div>
+        <div class="footer-contacts">
+            <div class="footer-item">
+                <span class="footer-label">email</span>
+                <a href="mailto:luca@example.com" class="footer-link">ticketsotw@gmail.com</a>
+            </div>
+            <div class="footer-item footer-instagram">
+                <span class="footer-label">Instagram</span>
+                <a href="https://www.instagram.com/ticketsplz/" target="_blank" class="footer-link">@ticketsplz</a>
+            </div>
+            <div class="footer-item footer-phone">
+                <span class="footer-label">phone</span>
+                <a href="tel:+39123456789" class="footer-link">+39 123 456 789</a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- GSAP library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- THREE.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Shader background -->
+    <script src="shader-pages.js"></script>
+    <!-- Main animation script -->
+    <script src="javascript.js"></script>
+
+        <div class="scrolling-stack">
+    <div class="scrolling-text reverse">
+        <div class="rail">
+            <h4>Non sono semplici pezzi di carta, ma un ponte tra persone ed esperienze, espressioni dell’estetica del loro tempo, tracce di vita vissuta e custodi di ricordi indelebili.</h4>
+        </div>
+    </div>
+    <div class="scrolling-text">
+        <div class="rail">
+            <h4>Non sono semplici pezzi di carta, ma un ponte tra persone ed esperienze, espressioni dell’estetica del loro tempo, tracce di vita vissuta e custodi di ricordi indelebili.</h4>
+        </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,239 @@
+/* ============================================================
+   ABOUT PAGE STYLES
+   ============================================================ */
+
+body {
+  background-image: none;
+  height: auto;
+  overflow: visible;
+  opacity: 0;
+  animation: aboutFadeIn 0.6s ease forwards;
+  position: relative;
+}
+
+:root {
+  --about-chrome-space: 100px;
+  --about-chrome-space-bottom: 120px;
+}
+
+#shader-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+@keyframes aboutFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.nav-link {
+  font-size: 1.1rem;
+}
+
+.about-page {
+  min-height: 100vh;
+  padding: var(--about-chrome-space) 20px var(--about-chrome-space-bottom);
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 40px;
+  margin: 0 auto;
+}
+
+.about-logo-container {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 50vh;
+  transform: translateY(-50%);
+  height: 0;
+}
+
+.about-page-logo {
+  width: 280px;
+  height: auto;
+  display: block;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0 0 45px 0;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  text-align: left;
+  grid-column: 2;
+  grid-row: 1;
+  color: #000;
+}
+
+.about-content {
+  grid-column: 2;
+  grid-row: 2;
+  display: block;
+}
+
+.about-text {
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.about-text p {
+  margin-bottom: 20px;
+  text-transform: none;
+  letter-spacing: normal;
+  line-height: 1.8;
+  color: #000;
+}
+
+.about-text p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+/* ============================================================
+   RESPONSIVE DESIGN
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .about-title {
+    font-size: 2rem;
+    margin-bottom: 60px;
+  }
+  
+  .about-page {
+    --about-chrome-space: 80px;
+    --about-chrome-space-bottom: 96px;
+    padding: var(--about-chrome-space) 20px var(--about-chrome-space-bottom);
+  }
+  
+  .about-contact {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .about-text {
+    font-size: 0.95rem;
+  }
+  
+  .about-contact {
+    padding: 25px;
+  }
+  
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-page {
+    --about-chrome-space: 126px;
+    --about-chrome-space-bottom: 122px;
+    padding: var(--about-chrome-space) 20px var(--about-chrome-space-bottom);
+    align-items: flex-start;
+  }
+
+  .about-container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .about-logo-container {
+    position: static;
+    top: auto;
+    transform: none;
+    height: auto;
+    justify-content: center;
+    grid-row: auto;
+  }
+
+  .about-page-logo {
+    width: 170px;
+  }
+
+  .about-content {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    --about-chrome-space: 120px;
+    --about-chrome-space-bottom: 130px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .about-text {
+    font-size: 0.96rem;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    --about-chrome-space: 114px;
+    --about-chrome-space-bottom: 142px;
+  }
+
+  .about-page-logo {
+    width: 130px;
+  }
+
+  .about-text {
+    font-size: 0.92rem;
+    line-height: 1.65;
+  }
+}
+
+@media (max-width: 390px) {
+  .about-page {
+    --about-chrome-space: 106px;
+    --about-chrome-space-bottom: 146px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .about-page-logo {
+    width: 116px;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}

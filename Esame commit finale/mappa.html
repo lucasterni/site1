@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  >
+  <link rel="stylesheet" href="mappa.css">
+</head>
+<body class="mappa-page">
+  <canvas id="shader-canvas"></canvas>
+
+  <header class="top-header">
+    <div class="title-group">
+      <img src="Images/LOGO.png" alt="Logo" class="header-logo">
+      <h3 class="title">TICKETS OF THE WORLD</h3>
+    </div>
+    <nav class="navbar">
+      <a href="index.html" class="nav-link">home</a>
+      <a href="projects.html" class="nav-link">archivio</a>
+      <a href="about.html" class="nav-link">about</a>
+    </nav>
+  </header>
+
+  <main class="mappa-container">
+    <p class="mappa-subtitle">*Tutti i tickets con la location presente in archivio sono segnati qui.</p>
+    <div id="tickets-map" aria-label="Mappa ticket"></div>
+  </main>
+
+  <footer class="footer bottom-header">
+    <div class="footer-message">Mandaci anche tu i tuoi biglietti!</div>
+    <div class="footer-contacts">
+      <div class="footer-item">
+        <span class="footer-label">email</span>
+        <a href="mailto:luca@example.com" class="footer-link">ticketsotw@gmail.com</a>
+      </div>
+      <div class="footer-item footer-instagram">
+        <span class="footer-label">Instagram</span>
+        <a href="https://www.instagram.com/ticketsplz/" target="_blank" class="footer-link">@ticketsplz</a>
+      </div>
+      <div class="footer-item footer-phone">
+        <span class="footer-label">phone</span>
+        <a href="tel:+39123456789" class="footer-link">+39 123 456 789</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="shader-pages.js"></script>
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="mappa.js"></script>
+</body>
+</html>
